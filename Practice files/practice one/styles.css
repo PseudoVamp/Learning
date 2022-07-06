@@ -1,0 +1,66 @@
+*{
+ background-color:teal;   
+}
+
+
+h1{
+    color:red;
+}
+
+
+.linumbers{
+    color;purple:
+    font-size:1.5em;
+    text-decoration:none;
+}
+
+/* element SPACE element - selects all of the spans inside an li */
+li span{
+    color:blue;
+}
+
+/* element COMMA element - selects all li's and all spans */
+li,span{
+
+}
+
+/* adjacent selectors - selects paragraphs preceded by an h1, not nested*/
+h1 + p{
+
+}
+
+/* direct child selector - selects only ul that are direct children of divs */
+div > ul{
+
+}
+
+/* attribute selector - all inputs with a type of text  */
+input[type="text"] {
+
+}
+
+
+/* pseudo class selectors
+:active - while being used or clicked
+:checked
+:first
+:first-child
+:hover
+:not()
+:nth-child()
+:nth-of-type()
+*/
+
+/* pseudo element selectors
+::after
+::before
+::first-letter
+::first-line
+::selection  -when highlighted
+*/
+
+
+
+div{
+    box-sizing: border-box; /*sets border to be included in size calculation*/
+}

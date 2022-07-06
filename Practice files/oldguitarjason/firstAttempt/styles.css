@@ -1,0 +1,110 @@
+body{
+  font-family:Roboto, sans-serif;
+}
+
+
+
+html{
+  height:200vh;
+  background-color:#0d0726;
+  color:white;
+}
+
+header{
+  text-align:center;
+  font-size:28px;
+}
+
+h1{
+  padding:30px;
+  text-decoration: underline;
+}
+
+nav{
+  float:right;
+
+}
+
+a{
+  text-decoration: none;
+  color:white;
+  box-shadow: inset 0 0 0 0 #6f00ff;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  
+}
+
+a:hover{
+  box-shadow: inset 200px 0 0 0 #6f00ff;
+  color: white;
+}
+
+nav,ul,.directionlinksdiv{
+  position:fixed;
+  top:25px;
+  right:10px;
+
+}
+
+.directionlinksdiv:hover{
+  transform: scale(1.5);
+  transition: scale 1s;
+}
+
+.directionlinks{
+  text-decoration:none;
+  display:block;
+  padding: 15px 40px 10px;
+}
+
+.directionlinks a:hover{
+  color:grey;
+  
+}
+
+.directionlinks a:visited{
+  color:white;
+}
+
+h2{
+  text-align:center;
+  padding:50px 0;
+}
+
+.majorscalechords{
+  text-align:center;
+  margin:0 auto;
+  background-color:#110738;
+
+}
+
+.notechartinfo{
+  font-size:1.6em;
+}
+
+.chordListTable{
+  margin:0 auto;
+  border-spacing: 50px;
+  display:flexbox;
+  border-left:solid 10px black;
+ 
+}
+
+.romanNumeralChords span{
+  padding:0px 50px;
+}
+thead.romanNumeralChords{
+  text-decoration:underline;
+  font-style: italic;
+  font-size:2em;
+}
+
+.romanNumeralChordNotes span{
+  text-align: center;
+}
+
+#testflexshit{
+  display:flex;
+  justify-content: space-around;
+}

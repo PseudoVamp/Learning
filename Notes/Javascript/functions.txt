@@ -1,0 +1,229 @@
+FUNCTIONS reusale and modular pieces of code
+
+
+function funcName() {
+    //do something
+}
+
+
+
+function singSong(){
+    console.log("Do");
+    console.log("Re");
+    console.log("Mi");
+}
+
+run the function
+singSong();
+
+
+
+
+
+ARGUMENTS 
+value that you pass through to something in javascript
+
+
+function greet(firstName){
+    console.log(`Hi, ${firstName}!);
+}
+
+multiple ARGUMENTS
+
+function greet(firstName, lastName) {
+    console.log(`Hey there, ${firstName} ${lastName[0]}.`)
+}
+
+RANT MESSAGE TO UPPERCASE
+function rant(message){
+    console.log(`${message}`.toUpperCase());
+
+   console.log(`${message}`.toUpperCase());
+
+   console.log(`${message}`.toUpperCase());
+
+
+}
+
+
+function repeat(str, numTimes){
+    let result = "";
+    for(let i = 0; i < numTimes; i++){
+        result += str;
+    }
+    console.log(result);
+}
+
+function isSnakeEyes(num1,num2){
+    if(num1 === 1 && num2===1){
+        console.log("Snake Eyes!")
+    } else {
+        console.log("Not Snake Eyes!")
+    }
+}
+
+
+
+RETURN
+
+function add(x + y){
+    return x + y;
+}
+
+
+CHECK IF THEY BOTH ARE NUMBERS AND RUN CODE, IF NOT RETURNS FALSE
+function add(x, y){
+    if(typeof x !== "number" || typeof y !== "number"){
+        return false;
+    }
+    let sum = x + y;
+    return sum;
+}
+
+
+function multiply(x , y){
+    return( x * y );
+}
+
+
+function isShortsWeather(temperature){
+    parseInt.temperature;
+    if(temperature >= 75){
+        return true;
+    }else {
+        return false;
+    }
+}
+
+
+
+
+// Please wite a function called lastElement which accepts a single array argument. 
+The function should return the last element of the array 
+(without removing the element). 
+If the array is empty, the function should return null.
+
+
+function lastElement(userArray){
+    parseInt.userArray;
+    if (userArray.length !== 0) {
+   return userArray[userArray.length -1];
+} else {
+   return null;
+}
+}
+
+
+
+
+// Define a function called capitalize that accepts a string argument and returns a new string with the first letter capitalized 
+(but the rest of the string unchanged) 
+
+function capitalize(makeBig){
+    return makeBig.charAt(0).toUpperCase() + makeBig.slice(1);
+}
+
+
+// write a function called sumArray which accepts a single argument: an array of numbers
+// it should return the sum of all the numbers in the array.
+const sumArray = (nums) =>{
+    let sum =0;
+    nums.forEach(num => {
+        sum += num;
+    })
+    return sum;
+}
+
+
+
+
+// write a function called returnDay that takes 1-7 and prints you out the day of the week
+let daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+
+function returnDay(dayNumber){
+    if(dayNumber === 1){
+        return daysOfWeek[0];
+    }
+        if(dayNumber === 2){
+        return daysOfWeek[1];
+    }
+        if(dayNumber === 3){
+        return daysOfWeek[2];
+    }
+        if(dayNumber === 4){
+        return daysOfWeek[3];
+    }
+        if(dayNumber === 5){
+        return daysOfWeek[4];
+    }
+        if(dayNumber === 6){
+        return daysOfWeek[5];
+    }
+        if(dayNumber === 7){
+        return daysOfWeek[6];
+    } else{
+        return null;
+    }
+}
+
+
+
+FUNCTION EXPRESSIONS
+
+const square = function (num){
+    return num * num;
+}
+
+square(7);     //gives you 49
+
+
+
+
+const add = function (x + y){
+    return x + y;
+}
+
+add(3,4);    =7
+
+
+
+HiGHER ORDER FUNCTIONS
+function inside a function , funception
+
+function callTwice(func) {
+  func();
+  func();
+}
+
+function rollDie() {
+  const roll = Math.floor(Math.random() * 6) + 1;
+  console.log(roll);
+}
+
+callTwice(rollDie);
+
+
+
+
+Returning FUNCTIONS
+
+function isBetween(num){
+    return num >= 50 && num <=100;
+}
+
+function isBetween2(num){
+    return num >= 1 && num <= 10;
+}
+
+PUT TOGETHER
+
+function makeBetweenFunc(min, max) {
+  return function (num) {
+    return num >= min && num <= max;
+  };
+}
+
+const child = makeBetweenFunc(1, 17);
+
+child(20);    = false
+child(10);    = true

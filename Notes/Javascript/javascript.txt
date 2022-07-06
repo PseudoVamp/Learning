@@ -1,0 +1,330 @@
+//Methods
+const word = "skateboard"; //Don't change this line!
+
+let facialHair = word.slice(5).replace("o", "e");
+
+
+-------------------------------------
+OLD WAY
+
+let product = "Artichoke";
+let price = 2.25;
+let qty = 5;
+"You bought " + qty + " " + product + ". Total is: " + price * qty
+
+result : 'You bought 5 Artichoke. Total is: 11.25'
+
+EASIER WAY
+template literals (use ` tilde key)
+`I counted ${3 + 4} sheep`;
+result : 'I counted 7 sheep'
+
+
+`You bought ${qty} ${product}. Total is: $${price * qty}`
+result : 'You bought 5 Artichoke. Total is: $11.25'
+---------------------------------------------
+
+let userInput = prompt("Please enter a number")
+
+parseInt(userInput)
+turns the input into a number
+
+
+
+
+-------------------------------------
+
+
+Math.floor(Math.random() * 5)
+RANDOM NUMBER BETWEEN 0 AND 4
+
+Math.floor(Math.random() * 5)
+RANDOM NUMBER BETWEEN 1 AND 5
+
+-----------------------------------------------------------------
+ ==    converts to type to check if similar
+ !=  converts type to make sure they aren't the same
+
+ === does NOT convert type to check if similar
+ !== does NOT convert type to make sure they aren't the same
+----------------------------------------------------------------------
+const die1 = Math.floor(Math.random() * 6) + 1; //random number from 1-6
+const die2 = Math.floor(Math.random() * 6) + 1; //random number from 1-6
+
+let roll = "You rolled a " + die1 + " and a " + die2 + ". They sum to " + (die1 + die2);
+
+
+----------------------------------------------
+
+
+let movieLine = ['tom", "nancy"];
+
+movieLine.push("oliver");
+adds to end of line
+
+movieLine.pop();
+empty variable, removes END of line
+
+movieLine.shift();
+empty variable removes FIRST person in line
+
+let nextPatron = movieLine.shift();
+makes nextPatron = first person in the line
+
+movieLine.unshift("newfrontperson");
+puts person in FRONT to be helped next
+
+--------------------------------------------
+CONCAT 
+
+let cats = ["blue", "kitty"];
+let dogs = ["rusty", "wyatt"];
+cats.concat(dogs); merges cats first
+dogs.concat(cats);  merges dogs first
+
+let comboParty = dogs.concat(cats);
+saves concat to new variable
+
+----------------------------------------------
+INCLUDES - boolean
+
+cats.includes("blue");
+true
+
+cats.includes("dingo");
+false
+
+--------------------------------------------
+
+comboParty.reverse()
+reverses the array
+destructive replacement
+---------------------------------------------
+slice/splice
+
+let colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+let coolColors= colors.slice(3,5)
+"green", "blue"
+
+splice inserts missing data
+
+colors.splice(1,0, "red-orange");
+adds at index of 1, deletes 0 and the name of the thing
+
+-------------------------------------------
+
+
+const person = {
+    firstName: "Mick",
+    lastName: "Jagger"
+    }
+
+-----------------------------------------------
+
+
+const restaurant = {
+    name: 'Ichiran Ramen',
+    address: `${Math.floor(Math.random() * 100) + 1} Johnson Ave`,
+    city: 'Brooklyn',
+    state: 'NY',
+    zipcode: '11206',
+}
+
+
+var fullAddress = restaurant["name"] + restaurant["address"] + restaurant["city"] + restaurant["state"] + restaurant["zipcode"];
+
+accesses the full restauraunt address in one line
+
+fullAddress
+'Ichiran Ramen2 Johnson AveBrooklynNY11206'
+
+-------------------------------------------------
+
+midterms = {jeff: "c", jason: "b", cheyenne: "a"}
+
+midterms.flavio = "a+"
+
+midterms["robin"] = "d"
+
+midterms
+returns- 
+{jeff: 'c', jason: 'b', cheyenne: 'a', flavio: 'a+', robin: 'd'}
+
+---------------------------------------------
+
+Objects inside of arrays
+
+const comments =[
+    {username: "Jason", text: "lolol", votes: 9},
+    {username: "jeff", text: "fuck you", votes: -12},
+    {username: "cheyenne", text: "piss", votes: 27},
+]
+
+comments[2].text     will return
+"piss"
+
+--------------------------------------------
+for loop syntax
+
+for (
+    [initialExpression];
+    [condition];
+    [incrementExpression]
+)
+
+------------------------
+loop 1 through 10
+
+variable for the loop || expression to be true for loop to continue || incriment for how long loop to run
+
+for( let i=1; i <= 10; i+= 1){
+    console.log(i);
+}
+
+for (let i=1; i<=6; i+=1){
+    console.log("Da ba dee da ba daa")
+}
+
+Da ba dee da ba daa x6
+
+
+for( let i = 0; i <=20; i+=2){
+    console.log(i);
+}
+
+for( let i=100; i>=0; i-=10){
+    console.log(i);
+}
+----------------------------------------
+looping over arrays
+
+const animals = ["lions", "tigers" , "bears"]
+
+for (let i=0; i < animals.length; i++){
+    console.log(i, animals[i]);
+}
+
+going from end to start
+
+for (let i= animals.length -1; i>=0; i--){
+    console.log(animals[i])
+}
+------------------------------------
+
+Changing this array to upper case with a loop
+
+const people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"]; //DONT TOUCH THIS LINE!
+
+// WRITE YOUR LOOP BELOW THIS LINE:
+for( let i=0; i<people.length; i+=1){
+    console.log(people[i].toUpperCase());
+}
+
+-----------------------------------------
+
+WHILE loop
+
+let num = 0;
+while (num<10){
+    console.log(num);
+    num++;
+}
+
+
+
+while(!gameOver){
+    //player 1 move
+    //player 2 move
+}
+
+
+
+
+const SECRET = "BabyHippo"
+
+let guess = prompt("enter the secret code...");
+while(guess !== SECRET){
+    guess = prompt("enter the secret code...");
+}
+console.log("CONGRATS YOU GOT THE SECRET!!!");
+
+
+
+---------------------------------------------
+
+BREAK in loops
+
+
+let input = prompt("Hey, say something!")
+while (true){
+    input = prompt(input);
+    if (input.toLowerCase() === "stop copying me"){
+        break;
+    }
+}
+console.log("Ok you win!");
+
+-----------------------------------------
+
+for of
+
+for (variable of iterable){
+    statement
+}
+
+
+const subreddits =["eyebleach", "funny", "50/50", "learnprogramming"];
+
+for (let sub of subreddits){
+    console.log(`Visit reddit.com/r/${sub}`);
+}
+
+
+
+
+in the case of seatingchart
+
+const seatingChart = [
+    ["jason", "cheyenne", "jeff"],
+    ["alex", "thomas", "jeremy"],
+    ["keith", "kevin", "dylan"]
+]
+
+for (let row of seatingChart){
+    for (let student of row){
+        console.log(student);
+    }
+}
+
+
+
+for(let char of "hello world"){
+    console.log(char);
+}
+
+****************************
+squaring numbers
+
+const numbers = [1,2,3,4,5,6,7,8,9];
+let num;
+numbers.map((integer) => {
+  num = Math.pow(integer, 2)
+  console.log(num)
+})
+********************************
+const numbers = [1,2,3,4,5,6,7,8,9];
+
+let integer;
+for(let num of numbers){
+   integer = parseInt(Math.pow(num, 2));
+    console.log(integer);
+}
+*********************************
+for IN loops (uncommon) iterates over an object and gives us the KEY not the value
+
+or you can 
+
+Object.keys(thevariable);
+Object.values(thevariable);
+Object.entries(thevariable);

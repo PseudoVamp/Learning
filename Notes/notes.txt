@@ -1,0 +1,67 @@
+unity
+unreal engine
+
+
+phaser.js
+
+zenva.com
+
+
+javascript 
+next js
+react -js framework
+
+JAVA
+
+margin:calc(10%/6);
+
+https://fonts.google.com/
+self explanitory
+
+https://coolors.co/palettes/trending
+Color picker and palletes
+
+https://html.spec.whatwg.org/
+list of html elements
+
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+MDN HTML element reference sheet 
+
+
+https://dev.w3.org/html5/html-author/charref
+Entity code reference
+
+https://docs.emmet.io/
+emmet cheat sheet
+
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+MDN css reference 
+
+https://www.cssfontstack.com/
+fonts and what browsers are used
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+pseudo class selectors
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/position
+MDN position static / relative / absolute / fixed/ sticky
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property
+MDN transitions
+
+https://easings.net/
+transition timing reference
+
+Transitions can have 4 - property - duration - timing function - delay
+
+
+https://unsplash.com/
+website for free images to use as backgrounds ect
+
+
+
+
+
+

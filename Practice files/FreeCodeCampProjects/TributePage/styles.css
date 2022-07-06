@@ -1,0 +1,41 @@
+html{
+  background-color:#290a38;
+  color:white;
+}
+
+
+
+
+#tribute-link{
+  target:_blank;
+  margin:10px auto;
+  text-align:center;
+  display:block;
+
+}
+
+img{
+  display:block;
+  max-width:100%;
+  height: auto;
+}
+
+#tribute-info{
+  text-align:center;
+  display:block;
+  height:auto;
+  margin: 10px auto;
+  padding:10px;
+  font-size:3em;
+}
+
+#img-caption{
+  font-size:1.6em;
+  text-align:center;
+  display:block;
+  padding: 10px;
+}
+
+#image{
+  margin:10px auto;
+}

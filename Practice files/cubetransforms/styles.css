@@ -1,0 +1,45 @@
+body{
+    width:100%;
+}
+
+
+
+div{
+    width:100px;
+    height:100px;
+    display:inline-block;
+}
+
+div:nth-child(1n){
+    background-color:red;
+
+}
+
+div:nth-child(2n){
+    background-color:black;
+}
+
+
+
+div:nth-child(3n):hover{
+    transform:rotate(0.5turn)
+}
+
+div:nth-child(4n):hover{
+    transform: scale(0.5) translate(-100%, -100%);
+}
+
+div:nth-child(5n):hover{
+    transform: scaleX(2);
+}
+
+div:nth-child(6n):hover{
+    margin-left:100px;
+    transition: margin-left 3s;
+    transition-timing-function: ease-in;
+} 
+
+div:nth-of-type(7n):hover{
+    background-color:blue;
+    transition: background-color 4s;
+}

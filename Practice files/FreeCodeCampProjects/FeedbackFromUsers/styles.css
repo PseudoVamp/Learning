@@ -1,0 +1,52 @@
+body{
+  background-color:teal;
+  font-size:20px;
+}
+
+h1{
+  text-align:center;
+}
+#description{
+  text-align:center;
+}
+
+input{
+  display:block;
+  text-align:center;
+  margin:auto;
+}
+
+label{
+  text-align:center;
+}
+
+form{
+  border:1px solid black;
+  padding: 4px;
+  background-color: turquoise;
+}
+
+.inline{
+  display:inline;
+}
+
+.improve{
+  display:inline;
+  text-align:center;
+  margin: 10px auto;
+}
+
+fieldset{
+  border:none;
+  padding: 2rem 0;
+  text-align:center;
+}
+.checkboxselection{
+  margin:15px 0 15px 0;
+  padding:
+}
+
+textarea{
+  display:block;
+  margin:auto;
+}

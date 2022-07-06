@@ -1,0 +1,40 @@
+Original container must be set to flexbox
+display:flex;
+
+
+Shorthand 
+Flex: (grow) (shrink) (basis)
+basis = ideal start size before its put in flex
+grow= (ratios) how unused space should be spread amongst flex items
+shrink= how items will shrink when theres not enough space
+
+order: (starts at 0) changes the order of content in a flexbox
+
+Container properties{
+    flex-direction: changes flow of content row/column -reverse
+
+    justify-content: define space along MAIN axis flex-end / center/ 
+
+    flex-wrap: wraps to next line to fill width / height
+
+    align-items: space distributed between items along CROSS axis flex-start / end / center
+
+    align-content: space between rows in container along CROSS axis
+
+}
+
+
+
+
+flex item properties{  -one item at a time-
+    order:
+
+    flex:
+
+    flex-grow:
+
+    flex-shrink:
+
+    align-self:
+
+}
