@@ -127,3 +127,22 @@ const findingFour = tenNumbers.filter((n) => {
 });
 
 const lowNumbers = tenNumbers.filter((x) => x < 5);
+
+// SOME and EVERY tests
+
+const exams = [80, 90, 99, 65, 32, 77, 88, 94, 45, 60, 90, 99];
+
+exams.every((score) => score >= 75);
+//false
+exams.every((score) => score >= 30);
+// true
+
+exams.some((score) => score >= 50);
+// checks if SOME of the scores are above 50
+
+// i dont understand this- please come back to learn more!!!
+// checks if an array is all even numbers?!? done differently
+const allEvens = (nums) => {
+  const isAllEven = nums.every((num) => num % 2 === 0);
+  return isAllEven;
+};
