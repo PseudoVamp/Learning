@@ -15,6 +15,12 @@ JAVA
 
 margin:calc(10%/6);
 
+https://www.udemytracks.com/
+nice roadmap
+
+https://mycolor.space/gradient?ori=to+right+top&hex=%23001537&hex2=%23002C71&sub=1
+cool gradient selector
+
 https://fonts.google.com/
 self explanitory
 
@@ -24,6 +30,9 @@ Color picker and palletes
 https://html.spec.whatwg.org/
 list of html elements
 
+
+https://whiteboard.explaineverything.com/
+WHITEBOARD APP
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 MDN HTML element reference sheet 

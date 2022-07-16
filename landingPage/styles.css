@@ -10,22 +10,25 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #8d99ae;
   font-family: roboto, sans-serif;
   height: 100%;
-  position: relative;
+  background-image: linear-gradient(
+    to left top,
+    #808080,
+    #8c8d8d,
+    #989a9b,
+    #a5a8a7,
+    #b3b5b3
+  );
 }
 
 header {
-  background-color: #0b2545;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  margin: 0 auto;
-  color: #ffffff;
-  border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 30px;
+  justify-content: flex-end;
+  padding: 8px;
+  background: black;
+  margin: 0;
+  height: 50px;
 }
 
 .sblogo {
@@ -33,6 +36,20 @@ header {
   height: 100px;
   width: 100px;
   margin: 20px;
+}
+#pagetitle {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 0;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+#pagetitle h1,
+#pagetitle p {
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -47,13 +64,19 @@ h1 {
 .topNavLinks {
   color: white;
   padding-right: 10px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   white-space: nowrap;
+  text-decoration: none;
+}
+
+.topNavLinks:hover {
+  color: lightgrey;
+  text-decoration: underline;
 }
 
 .mainContent {
-  width: 90%;
-  margin: 20px auto;
+  width: 100%;
+  margin: 5px auto;
   display: flex;
   justify-content: space-between;
 }
@@ -65,51 +88,58 @@ h1 {
 }
 
 .mainContent section {
-  margin-right: 80px;
+  margin: 0 40px 0 40px;
 }
 
 h2 {
-  background-color: #0b2545;
+  font-style: italic;
+  text-shadow: 1px 1px 1px black;
+
+  font-size: 30px;
   padding: 10px;
-  color: #ffffff;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  color: white;
   border-bottom-right-radius: 100px;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
   border-top-right-radius: 10px;
+  text-decoration: underline;
 }
 
 .blogText {
   margin: 10px 0px 10px 15px;
   padding: 10px;
-  background-color: #134074;
+  background-image: linear-gradient(
+    to left top,
+    #000000,
+    #100f10,
+    #19191a,
+    #212124,
+    #282b2e
+  );
   color: white;
   border-radius: 10px;
   font-size: 1.2rem;
   font-weight: 300;
 }
+
 .footerRoom {
   display: block;
   height: 150px;
 }
 
 footer {
-  background-color: #0b2545;
-  padding: 30px;
-  width: 90%;
-  margin: 150px auto 0;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 100px;
-  position: fixed;
-  bottom: 0;
-  left: 5%;
-  right: 5%;
-  margin: 100px auto 0;
+  background-color: black;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .footerText {
   text-align: end;
   font-size: 0.5rem;
   color: white;
-  position: fixed;
   bottom: 0;
   right: 10%;
 }
@@ -150,11 +180,12 @@ footer {
   }
 
   #navLinksHolder {
-    margin-right: 50px;
+    margin-right: 20px;
   }
   .topNavLinks {
-    font-size: 1rem;
-    display: block;
+    justify-content: space-around;
+    white-space: nowrap;
+
     margin-top: 10px;
     text-align: center;
   }
@@ -164,6 +195,9 @@ footer {
 }
 
 @media (max-width: 600px) {
+  header {
+    height: 30px;
+  }
   section {
     width: 100%;
   }
@@ -172,17 +206,13 @@ footer {
     text-align: center;
   }
   .topNavLinks {
-    font-size: 0.8rem;
-    margin: 20px;
-    padding-left: 20px;
+    font-size: 1rem;
+    margin: 2px;
+    padding: 2px;
   }
 }
 
 @media (max-width: 450px) {
-  header,
-  footer {
-    height: 100px;
-  }
   h1 {
     font-size: 1.5rem;
     font-weight: 900;
@@ -199,6 +229,6 @@ footer {
     display: none;
   }
   .topNavLinks {
-    margin-top: 5px;
+    font-size: 0.8rem;
   }
 }
