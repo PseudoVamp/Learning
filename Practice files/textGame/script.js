@@ -5,7 +5,7 @@ const playerName = prompt("Please enter your name!");
 let userInput = prompt(
   "Hello " +
     playerName +
-    " It's nice to meet you. Please choose a direction to start. Enter a direction.forward, backward, left, or right."
+    " It's nice to meet you. Please choose a direction to start. Enter a direction. forward, backward, left, or right."
 );
 
 while ((userInput !== "forward", "backward", "left", "right")) {

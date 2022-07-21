@@ -1,0 +1,48 @@
+body {
+  background-color: lightgrey;
+}
+h1 {
+  text-align: center;
+  font-size: 4em;
+}
+h2 {
+  font-size: 2em;
+}
+#scoreBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+#playToSelect {
+  font-size: 1.5em;
+}
+#winningScore {
+  width: 50px;
+  height: 50px;
+  font-size: 0.8em;
+}
+.gameButtons {
+  height: 40px;
+  width: 200px;
+  margin: 20px;
+  border-radius: 25px;
+}
+#p1Button {
+  background-color: #00a5cf;
+}
+#p2Button {
+  background-color: #7ae582;
+}
+#resetButton {
+  background-color: red;
+}
+.winner {
+  color: green;
+}
+
+.loser {
+  color: red;
+}

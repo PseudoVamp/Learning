@@ -1,0 +1,36 @@
+body {
+  background-color: #79757d;
+  height: 100vh;
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+h2 {
+  text-align: center;
+  display: block;
+  white-space: nowrap;
+  padding: 20px;
+}
+#comp {
+  color: white;
+}
+#user {
+  color: white;
+}
+#outcome {
+  color: white;
+}
+#buttonHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  display: block;
+  padding: 10px 40px;
+  margin: 40px;
+  background-color: #380f91;
+  color: white;
+  border-radius: 25px;
+}

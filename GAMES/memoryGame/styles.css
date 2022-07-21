@@ -1,0 +1,19 @@
+body {
+  background-color: grey;
+}
+h3 {
+  text-align: center;
+}
+#grid {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#centerMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

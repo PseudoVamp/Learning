@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  background-color: grey;
+}
+h1 {
+  text-align: center;
+  padding: 50px 0;
+}
+h2 {
+  padding-top: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+#displayArea {
+  height: 40%;
+}
+#pickArea {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grpOnewordHolderButton,
+.grpTwowordHolderButton,
+.grpThreewordHolderButton,
+.grpFourwordHolderButton,
+.grpFivewordHolderButton {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 150px;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+#grpOne0 {
+}
