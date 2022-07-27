@@ -15,7 +15,7 @@ word4.innerText = randomWords[Math.floor(Math.random() * 10000) + 1];
 word5.innerText = randomWords[Math.floor(Math.random() * 10000) + 1];
 
 //creates i#s of buttons in each of the five areas
-const createButtons = (x, y) => {
+const createButtons = (x, y, z) => {
   for (let i = 0; i < 10; i++) {
     let btn = document.createElement("button");
     btn.innerHTML = randomWords[Math.floor(Math.random() * 10000) + 1];
@@ -24,40 +24,25 @@ const createButtons = (x, y) => {
     btn.id = y + i;
   }
 };
-
 //calls creatbuttons and assigns id's to each individual button
-createButtons(buttons1, "grpOne");
-createButtons(buttons2, "grpTwo");
-createButtons(buttons3, "grpThree");
-createButtons(buttons4, "grpFour");
-createButtons(buttons5, "grpFive");
+createButtons(buttons1, "grpOne", word1);
+createButtons(buttons2, "grpTwo", word2);
+createButtons(buttons3, "grpThree", word3);
+createButtons(buttons4, "grpFour", word4);
+createButtons(buttons5, "grpFive", word5);
 
-//function to add event listeners to all buttons to update each of their relative words
-const addingClickers = (x, y, z) => {
+// function to add eventlisteners to every button and assign that buttons text to the corresponding word1-5
+const addEventClickers = (x, y) => {
   for (let i = 0; i < 10; i++) {
-    x.addEventListener("click", function () {
-      y.innerText = z + i.innerText;
+    document.getElementById(x + i).addEventListener("click", function () {
+      let text = document.getElementById(x + i).innerHTML;
+      y.innerText = text;
     });
   }
 };
-//calls addingClickers on buttons and assigns what word to update with each click
-addingClickers(buttons1, word1, "#grpOne");
-addingClickers(buttons2, word2, "#grpTwo");
-addingClickers(buttons3, word3, "#grpThree");
-addingClickers(buttons4, word4, "#grpFour");
-addingClickers(buttons5, word5, "#grpFive");
-
-// const addingClickers = (x, y) => {
-//     for (let i = 0; i < 10; i++) {
-//       x.addEventListener("click", function () {
-//         let newWord = x.innerText;
-//         y.innerText = newWord;
-//       });
-//     }
-//   };
-const updateWord = (x, y) => {
-  //   console.log(this.innerText);
-  y.innerText = buttons1.innerText;
-};
-
-console.log(groupOne.innerText);
+//calls the add event clickers function
+addEventClickers("grpOne", word1);
+addEventClickers("grpTwo", word2);
+addEventClickers("grpThree", word3);
+addEventClickers("grpFour", word4);
+addEventClickers("grpFive", word5);

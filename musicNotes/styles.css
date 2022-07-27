@@ -1,0 +1,46 @@
+#002642;
+#840032;
+#e59500;
+#e5dada;
+#02040f;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e5dada;
+  color:#02040f;
+}
+h1,h2 {
+  text-align: center;
+  margin:0;
+  padding:0;
+}
+#selectorHolder{
+  display:block;
+  margin: 0 auto;
+  text-align: center;
+}
+#scaleHolder{
+display:flex;
+justify-content: space-between;
+flex-direction: column;
+align-items: center;
+}
+
+
+select {
+  border: 0;
+  outline: 0;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
