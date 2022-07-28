@@ -26,6 +26,8 @@ h1,h2 {
   text-align: center;
 }
 #scaleHolder{
+ 
+  margin: 10px 0;
 display:flex;
 justify-content: space-between;
 flex-direction: column;
@@ -43,4 +45,25 @@ select {
   border-radius: 20px;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+#getNotes{
+  background-color:#002642; 
+  color:#e5dada;
+  font-size: 1.5em;
+  border-radius: 12px;
+}
+
+@media (min-width: 800px){
+  h1,h2{
+    margin: 25px 0;
+  }
+  #scaleHolder{
+    font-size: 3em;
+    width:80%;
+    margin: 50px auto;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
 }
