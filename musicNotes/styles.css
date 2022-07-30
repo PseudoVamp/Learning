@@ -12,7 +12,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #e5dada;
+  min-height:100vh;
+  background-color: #f4f3ee;
   color:#02040f;
 }
 
@@ -88,8 +89,14 @@ select {
 #colorLegend{
   display:flex;
   flex-direction: column;
+  align-items: center;
 }
-
+.legendColors{
+  padding:4px;
+  border:1px solid black;
+  border-radius: 5px;
+  color:white;
+}
 #greenLegend{
 background-color: green;
 }
@@ -102,12 +109,39 @@ background-color: blue;
 #purpleLegend{
 background-color: purple;
 }
-.legendColors{
-  padding:4px;
-  border:1px solid black;
-  border-radius: 5px;
-  color:white;
-  
+
+#legendAndPianoHolder{
+  display:flex;
+  justify-content: center;
+  width:70%;
+  margin:0 auto;
+}
+#pianoContainer{
+display:flex;
+
+}
+.key{
+
+}
+.white{
+  width:100px;
+  height:400px;
+  background-color:white;
+  border:1px solid #333;
+}
+.white.active{
+  background-color: #CCC;
+}
+.black{
+  width:60px;
+  height:240px;
+  background-color:black;
+  margin-left: -30px;
+  margin-right: -30px;
+  z-index: 2;
+}
+.black.active{
+  background-color: #333;
 }
 @media (min-width: 800px){
   h1,h2{
