@@ -15,6 +15,8 @@ body {
   background-color: #e5dada;
   color:#02040f;
 }
+
+
 h1,h2 {
   text-align: center;
   margin:0;
@@ -26,12 +28,11 @@ h1,h2 {
   text-align: center;
 }
 #scaleHolder{
- 
   margin: 10px 0;
-display:flex;
-justify-content: space-between;
-flex-direction: column;
-align-items: center;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -59,8 +60,55 @@ select {
   padding:6px;
   border-radius: 10px;
   white-space: nowrap;
+  transition: color 300ms;
+}
+.chordsGreen{
+  color:green;
+}
+.chordsRed{
+  color:red;
+}
+.chordsBlue{
+  color:blue;
+}
+.chordsPurple{
+  color:purple;
+}
+#colorLegend{
+  font-size: 1.5em;
+  margin:0 auto;
+  width:30%;
+}
+.colorWords{
+  display:flex;
+  flex-direction: row;
+  margin: 2px 2px;
+  
+}
+#colorLegend{
+  display:flex;
+  flex-direction: column;
 }
 
+#greenLegend{
+background-color: green;
+}
+#redLegend{
+background: red;
+}
+#blueLegend{
+background-color: blue;
+}
+#purpleLegend{
+background-color: purple;
+}
+.legendColors{
+  padding:4px;
+  border:1px solid black;
+  border-radius: 5px;
+  color:white;
+  
+}
 @media (min-width: 800px){
   h1,h2{
     margin: 25px 0;
@@ -68,7 +116,7 @@ select {
   #scaleHolder{
     font-size: 2em;
     width:80%;
-    margin: 50px auto;
+    margin: 50px auto 5px;
     flex-direction: row;
     justify-content: space-around;
     

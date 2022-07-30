@@ -11,7 +11,7 @@ noteSelect.addEventListener("change", function () {
 
 //creates the 8 p elements to display the notes in a scale
 const createScales = (x, y) => {
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < 7; i++) {
     let notes = document.createElement("p");
     notes.className = "individualNotes";
     x.appendChild(notes);
@@ -27,7 +27,7 @@ let note3 = document.getElementById("note3");
 let note4 = document.getElementById("note4");
 let note5 = document.getElementById("note5");
 let note6 = document.getElementById("note6");
-let note7 = document.getElementById("note7");
+
 note0.innerText = scaleNotes[startSpot] + " - I";
 note1.innerText = scaleNotes[startSpot + 2] + " - ii";
 note2.innerText = scaleNotes[startSpot + 4] + " - iii";
@@ -35,7 +35,7 @@ note3.innerText = scaleNotes[startSpot + 5] + " - IV";
 note4.innerText = scaleNotes[startSpot + 7] + " - V";
 note5.innerText = scaleNotes[startSpot + 9] + " - vi";
 note6.innerText = scaleNotes[startSpot + 11] + " - vii°";
-note7.innerText = scaleNotes[startSpot + 12] + " - I";
+
 //
 //
 //
@@ -57,7 +57,6 @@ getNotes.addEventListener("click", function () {
     note4.innerText = scaleNotes[startSpot + 7] + " - V";
     note5.innerText = scaleNotes[startSpot + 9] + " - vi";
     note6.innerText = scaleNotes[startSpot + 11] + " - vii°";
-    note7.innerText = scaleNotes[startSpot + 12] + " - I";
   } else if (mode === "Dorian") {
     note0.innerText = scaleNotes[startSpot] + " - ii";
     note1.innerText = scaleNotes[startSpot + 2] + " - iii";
@@ -66,7 +65,6 @@ getNotes.addEventListener("click", function () {
     note4.innerText = scaleNotes[startSpot + 7] + " - vi";
     note5.innerText = scaleNotes[startSpot + 9] + " - vii°";
     note6.innerText = scaleNotes[startSpot + 10] + " - I";
-    note7.innerText = scaleNotes[startSpot + 12] + " - ii";
   } else if (mode === "Phrygian") {
     note0.innerText = scaleNotes[startSpot] + " - iii";
     note1.innerText = scaleNotes[startSpot + 1] + " - IV";
@@ -75,7 +73,6 @@ getNotes.addEventListener("click", function () {
     note4.innerText = scaleNotes[startSpot + 7] + " - vii°";
     note5.innerText = scaleNotes[startSpot + 8] + " - I";
     note6.innerText = scaleNotes[startSpot + 10] + " - ii";
-    note7.innerText = scaleNotes[startSpot + 12] + " - iii";
   } else if (mode === "Lydian") {
     note0.innerText = scaleNotes[startSpot] + " - IV";
     note1.innerText = scaleNotes[startSpot + 2] + " - V";
@@ -84,7 +81,6 @@ getNotes.addEventListener("click", function () {
     note4.innerText = scaleNotes[startSpot + 7] + " - I";
     note5.innerText = scaleNotes[startSpot + 9] + " - ii";
     note6.innerText = scaleNotes[startSpot + 11] + " - iii";
-    note7.innerText = scaleNotes[startSpot + 12] + " - IV";
   } else if (mode === "Mixolydian") {
     note0.innerText = scaleNotes[startSpot] + " - V";
     note1.innerText = scaleNotes[startSpot + 2] + " - vi";
@@ -93,7 +89,6 @@ getNotes.addEventListener("click", function () {
     note4.innerText = scaleNotes[startSpot + 7] + " - ii";
     note5.innerText = scaleNotes[startSpot + 9] + " - iii";
     note6.innerText = scaleNotes[startSpot + 10] + " - IV";
-    note7.innerText = scaleNotes[startSpot + 12] + " - V";
   } else if (mode === "Aeolian") {
     note0.innerText = scaleNotes[startSpot] + " - vi";
     note1.innerText = scaleNotes[startSpot + 2] + " - vii°";
@@ -102,7 +97,6 @@ getNotes.addEventListener("click", function () {
     note4.innerText = scaleNotes[startSpot + 7] + " - iii";
     note5.innerText = scaleNotes[startSpot + 8] + " - IV";
     note6.innerText = scaleNotes[startSpot + 10] + " - V";
-    note7.innerText = scaleNotes[startSpot + 12] + " - vi";
   } else if (mode === "Locrian") {
     note0.innerText = scaleNotes[startSpot] + " - vii°";
     note1.innerText = scaleNotes[startSpot + 1] + " - I";
@@ -111,17 +105,90 @@ getNotes.addEventListener("click", function () {
     note4.innerText = scaleNotes[startSpot + 6] + " - IV";
     note5.innerText = scaleNotes[startSpot + 8] + " - V";
     note6.innerText = scaleNotes[startSpot + 10] + " - vi";
-    note7.innerText = scaleNotes[startSpot + 12] + " - vii°";
   }
 });
-//below is bad,just use for reference
-//list of scale... degrees? I need to index from main scaleHolder
-//start needs to be root dependant on the "select scale" option,
-//and index goes up in number from there dictated below
-// const ionian = ["start", 2, 2, 1, 2, 2, 2, 1];
-// const dorian = ["start", 2, 1, 2, 2, 2, 1, 2];
-// const phrygian = ["start", 1, 2, 2, 2, 1, 2, 2];
-// const lydian = ["start", 2, 2, 2, 1, 2, 2, 1];
-// const mixolydian = ["start", 2, 2, 1, 2, 2, 1, 2];
-// const aeolian = ["start", 2, 1, 2, 2, 1, 2, 2];
-// const locrian = ["start", 1, 2, 2, 1, 2, 2, 2];
+
+note0.addEventListener("mouseover", function () {
+  note0.classList.add("chordsGreen");
+  note2.classList.add("chordsRed");
+  note4.classList.add("chordsBlue");
+  note6.classList.add("chordsPurple");
+});
+note0.addEventListener("mouseout", function () {
+  note0.classList.remove("chordsGreen");
+  note2.classList.remove("chordsRed");
+  note4.classList.remove("chordsBlue");
+  note6.classList.remove("chordsPurple");
+});
+note1.addEventListener("mouseover", function () {
+  note1.classList.add("chordsGreen");
+  note3.classList.add("chordsRed");
+  note5.classList.add("chordsBlue");
+  note0.classList.add("chordsPurple");
+});
+note1.addEventListener("mouseout", function () {
+  note1.classList.remove("chordsGreen");
+  note3.classList.remove("chordsRed");
+  note5.classList.remove("chordsBlue");
+  note0.classList.remove("chordsPurple");
+});
+note2.addEventListener("mouseover", function () {
+  note2.classList.add("chordsGreen");
+  note4.classList.add("chordsRed");
+  note6.classList.add("chordsBlue");
+  note1.classList.add("chordsPurple");
+});
+note2.addEventListener("mouseout", function () {
+  note2.classList.remove("chordsGreen");
+  note4.classList.remove("chordsRed");
+  note6.classList.remove("chordsBlue");
+  note1.classList.remove("chordsPurple");
+});
+note3.addEventListener("mouseover", function () {
+  note3.classList.add("chordsGreen");
+  note5.classList.add("chordsRed");
+  note0.classList.add("chordsBlue");
+  note2.classList.add("chordsPurple");
+});
+note3.addEventListener("mouseout", function () {
+  note3.classList.remove("chordsGreen");
+  note5.classList.remove("chordsRed");
+  note0.classList.remove("chordsBlue");
+  note2.classList.remove("chordsPurple");
+});
+note4.addEventListener("mouseover", function () {
+  note4.classList.add("chordsGreen");
+  note6.classList.add("chordsRed");
+  note1.classList.add("chordsBlue");
+  note3.classList.add("chordsPurple");
+});
+note4.addEventListener("mouseout", function () {
+  note4.classList.remove("chordsGreen");
+  note6.classList.remove("chordsRed");
+  note1.classList.remove("chordsBlue");
+  note3.classList.remove("chordsPurple");
+});
+note5.addEventListener("mouseover", function () {
+  note5.classList.add("chordsGreen");
+  note0.classList.add("chordsRed");
+  note2.classList.add("chordsBlue");
+  note4.classList.add("chordsPurple");
+});
+note5.addEventListener("mouseout", function () {
+  note5.classList.remove("chordsGreen");
+  note0.classList.remove("chordsRed");
+  note2.classList.remove("chordsBlue");
+  note4.classList.remove("chordsPurple");
+});
+note6.addEventListener("mouseover", function () {
+  note6.classList.add("chordsGreen");
+  note1.classList.add("chordsRed");
+  note3.classList.add("chordsBlue");
+  note5.classList.add("chordsPurple");
+});
+note6.addEventListener("mouseout", function () {
+  note6.classList.remove("chordsGreen");
+  note1.classList.remove("chordsRed");
+  note3.classList.remove("chordsBlue");
+  note5.classList.remove("chordsPurple");
+});
